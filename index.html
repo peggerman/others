@@ -10,13 +10,31 @@
 		<h1>Pegger Productions</h1>
 	</header>
 	<nav>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
+		<ul style="display: flex; justify-content: center;">
+			<li style="list-style: none;">
+				<button class="responsive-button animated-button" style="border-radius: 10px; background-color: black; color: white; padding: 1em; transition: all 0.5s ease; font-size: 24px; width: 150px; height: 50px; display: flex; align-items: center; justify-content: center;">
+					<a href="index.html" style="text-decoration: none; color: white;">Home</a>
+				</button>
+			</li>
+			<li style="list-style: none;">
+				<button class="responsive-button animated-button" style="border-radius: 10px; background-color: black; color: white; padding: 1em; transition: all 0.5s ease; font-size: 24px; width: 150px; height: 50px; display: flex; align-items: center; justify-content: center;">
+					<a href="about.html" style="text-decoration: none; color: white;">About</a>
+				</button>
+			</li>
+			<li style="list-style: none;">
+				<button class="responsive-button animated-button" style="border-radius: 10px; background-color: black; color: white; padding: 1em; transition: all 0.5s ease; font-size: 24px; width: 150px; height: 50px; display: flex; align-items: center; justify-content: center;">
+					<a href="stream.html" style="text-decoration: none; color: white;">Stream Now</a>
+				</button>
+			</li>
 		</ul>
+		<style>
+			.responsive-button:hover {
+				transform: scale(1.1) rotate(10deg);
+			}
+		</style>
 	</nav>
 	<main>
-		<p>Welcome to Pegger Productions!</p>
+		<p style="color: black; font-size: 24px; font-weight: bold;">Welcome to Pegger Productions!</p>
 	</main>
 	<footer>
 		<p>&copy; 2024 Pegger Productions</p>

@@ -1,108 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="stylesheet" href="style.css">
 	<meta charset="utf-8">
 	<title>About Pegger Productions</title>
-	<style>
-		:root {
-			--grey: #333;
-			--light-grey: #ccc;
-			--pegger-red: #ff6666;
-		}
-		* {
-			box-sizing: border-box;
-		}
-		html, body {
-			margin: 0;
-			padding: 0;
-			font-family: 'Open Sans', sans-serif;
-			min-height: 100vh;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-		}
-		header {
-			margin-top: 1em;
-		}
-		body {
-			background-color: var(--light-grey);
-			color: white;
-		}
-		header, nav, main, footer {
-			padding: 1em;
-		}
-		header {
-			background-color: var(--grey);
-		}
-		h1, h2 {
-			margin: 0;
-		}
-		h1 {
-			font-size: 2em;
-		}
-		h2 {
-			font-size: 1.5em;
-		}
-		nav {
-			background-color: var(--grey);
-			border-radius: 10px;
-			margin-bottom: 1em;
-		}
-		nav ul {
-			list-style: none;
-			margin: 0;
-			padding: 0;
-			display: flex;
-			justify-content: space-between;
-		}
-		nav li {
-			margin: 0 1em;
-		}
-		nav a {
-			color: white;
-			text-decoration: none;
-		}
-		main p {
-			color: var(--grey);
-		}
-		main {
-			background-color: white;
-			border-radius: 10px;
-			margin-bottom: 2em;
-		}
-		footer {
-			background-color: var(--grey);
-			color: white;
-			font-size: 0.8em;
-		}
-		p {
-			margin: 1em 0;
-		}
-	</style>
 </head>
 <body>
 	<header>
 		<h1>About Pegger Productions</h1>
 	</header>
 	<nav>
-		<ul>
-			<li><a href="index.html">Home</a></li>
+		<ul style="display: flex; justify-content: center;">
+			<li style="list-style: none;">
+				<button class="responsive-button animated-button" style="border-radius: 10px; background-color: black; color: white; padding: 1em; transition: all 0.5s ease; font-size: 24px; width: 150px; height: 50px; display: flex; align-items: center; justify-content: center;">
+					<a href="index.html" style="text-decoration: none; color: white;">Home</a>
+				</button>
+			</li>
 		</ul>
+		<style>
+			.responsive-button:hover {
+				transform: scale(1.1) rotate(10deg);
+			}
+		</style>
 	</nav>
-	<main>
-		<section id="peggerman" class="centered">
+
+	<main style="display: flex; justify-content: center; align-items: center;">
+		<section id="peggerman" class="centered" style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 2em;">
 			<h2>About Peggerman</h2>
 			<p>Peggerman is the main man behind Pegger Productions. He's a pro musician from Denver, Colorado.</p>
-			<div style="height: 200px; width: 200px; background-color: lightgray; margin: 1em auto; border-radius: 50%;">
+			<div style="height: 200px; width: 200px; background-color: lightgray; border-radius: 50%;">
 				<img src="Screenshot 2024-05-03 at 12.17.52 PM.png" alt="Peggerman" style="height: 100%; width: 100%; object-fit: cover; border-radius: 50%;">
 			</div>
 		</section>
-		<section id="lil-magnitoe" class="centered">
+		<section id="lil-magnitoe" class="centered" style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 2em;">
 			<h2>About Lil Magnitoe</h2>
 			<p>Lil Magnitoe is The main producer from Denver as well. He's been making music since he was a teenager and has been a part of Pegger Productions since its inception.</p>
 		</section>
-		<p>Pegger Productions is a production studio for real sick music</p>
+		<p style="text-align: center;">Pegger Productions is a production studio for real sick music</p>
 	</main>
 	<footer>
 		<p>&copy; 2024 Pegger Productions</p>
