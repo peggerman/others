@@ -95,6 +95,8 @@ p {
 
 body {
 	background-color: var(--grey);
-	color: white;
+	color: var(--light-grey);
 }
+
+
 
